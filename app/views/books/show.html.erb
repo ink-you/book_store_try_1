@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Seller:</strong>
+  <%= @book.seller_id %>
+</p>
+
+<p>
+  <strong>Bookcode:</strong>
+  <%= @book.bookcode_id %>
+</p>
+
+<p>
+  <strong>Buyer:</strong>
+  <%= @book.buyer_id %>
+</p>
+
+<p>
+  <strong>Seller:</strong>
+  <%= @book.seller_id %>
+</p>
+
+<p>
+  <strong>Seller price:</strong>
+  <%= @book.seller_price %>
+</p>
+
+<p>
+  <strong>Last price:</strong>
+  <%= @book.last_price %>
+</p>
+
+<p>
+  <strong>Send flag:</strong>
+  <%= @book.send_flag %>
+</p>
+
+<%= link_to 'Edit', edit_book_path(@book) %> |
+<%= link_to 'Back', books_path %>
