@@ -1,7 +1,6 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  seller_id: 1
   bookcode_id: 1
   buyer_id: 1
   seller_id: 1
@@ -10,7 +9,6 @@ one:
   send_flag: 1
 
 two:
-  seller_id: 1
   bookcode_id: 1
   buyer_id: 1
   seller_id: 1
