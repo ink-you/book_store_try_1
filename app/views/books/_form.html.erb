@@ -11,31 +11,29 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="form-group">
     <%= f.label :seller_id %><br>
-    <%= f.number_field :seller_id %>
+    <%= f.number_field :seller_id, class: "form-control" %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :bookcode_id %><br>
-    <%= f.number_field :bookcode_id %>
+    <%= f.number_field :bookcode_id, class: "form-control" %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :buyer_id %><br>
-    <%= f.number_field :buyer_id %>
+    <%= f.number_field :buyer_id, class: "form-control" %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :seller_price %><br>
-    <%= f.number_field :seller_price %>
+    <%= f.number_field :seller_price, class: "form-control" %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :last_price %><br>
-    <%= f.number_field :last_price %>
+    <%= f.number_field :last_price, class: "form-control" %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :send_flag %><br>
-    <%= f.number_field :send_flag %>
+    <%= f.number_field :send_flag, class: "form-control" %>
   </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+  <%= f.submit class: "btn btn-primary" %>
 <% end %>

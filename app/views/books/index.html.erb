@@ -22,9 +22,9 @@
         <td><%= book.seller_price %></td>
         <td><%= book.last_price %></td>
         <td><%= book.send_flag %></td>
-        <td><%= link_to 'Show', book %></td>
-        <td><%= link_to 'Edit', edit_book_path(book) %></td>
-        <td><%= link_to 'Destroy', book, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', book, class: "btn btn-link" %></td>
+        <td><%= link_to 'Edit', edit_book_path(book), class: "btn btn-link" %></td>
+        <td><%= link_to 'Destroy', book, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-link" %></td>
       </tr>
     <% end %>
   </tbody>
@@ -32,4 +32,4 @@
 
 <br>
 
-<%= link_to 'New Book', new_book_path %>
+<%= link_to 'New Book', new_book_path, class: "btn btn-link" %>
