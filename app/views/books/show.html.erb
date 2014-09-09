@@ -2,17 +2,21 @@
 
 <p>
   <strong>Seller:</strong>
-  <%= @book.seller_id %>
+  <%= link_to @book.seller.name, person_path(@book.seller) %>
 </p>
 
 <p>
-  <strong>Bookcode:</strong>
-  <%= @book.bookcode_id %>
+  <strong>Book:</strong>
+  <ul>
+    <li>name: <%= @book.bookcode.name %></li>
+    <li>price: <%= @book.bookcode.price %></li>
+    <li>isbn: <%= @book.bookcode.isbn %></li>
+  </ul>
 </p>
 
 <p>
   <strong>Buyer:</strong>
-  <%= @book.buyer_id %>
+  <%= link_to @book.buyer.name, person_path(@book.buyer) %>
 </p>
 
 <p>

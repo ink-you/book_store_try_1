@@ -10,5 +10,12 @@
   <%= @person.email %>
 </p>
 
+<p>
+  <strong>Books to <%= @person.type == "seller" ? "sell:" : "buy:" %></strong>
+  <% @person.books.each do |book| %>
+    <%= link_to book.bookcode.name, book_path(book) %><br>
+  <% end %>
+</p>
+
 <%= link_to 'Edit', edit_person_path(@person) %> |
 <%= link_to 'Back', people_path %>
