@@ -16,4 +16,5 @@
 /tmp
 
 # Ignore
-.DS_Store
+**/.DS_Store
+.ruby-version
