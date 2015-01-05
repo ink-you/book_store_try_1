@@ -22,9 +22,9 @@ ActiveRecord::Schema.define(version: 20140614193223) do
   end
 
   create_table "books", force: true do |t|
-    t.integer  "seller_id"
     t.integer  "bookcode_id"
     t.integer  "buyer_id"
+    t.integer  "seller_id"
     t.integer  "seller_price"
     t.integer  "last_price"
     t.integer  "send_flag"
