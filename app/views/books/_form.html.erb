@@ -4,12 +4,12 @@
       <div class="panel-heading">Simple Form</div>
       <div class="panel-body">
         <%= simple_form_for @book, wrapper: :inline_form, html: { class: 'form-inline' } do |f| %>
-          <%= f.input :seller_id %>
-          <%= f.input :bookcode_id %>
-          <%= f.input :buyer_id %>
-          <%= f.input :seller_price %>
-          <%= f.input :last_price %>
-          <%= f.input :send_flag %>
+          <%= f.input :seller_id %><br>
+          <%= f.input :bookcode_id %><br>
+          <%= f.input :buyer_id %><br>
+          <%= f.input :seller_price %><br>
+          <%= f.input :last_price %><br>
+          <%= f.input :send_flag %><br>
           <%= f.button :submit  %>
         <% end %>
       </div>
